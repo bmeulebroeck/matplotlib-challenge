@@ -1,8 +1,8 @@
 # matplotlib-challenge
 
 <h1> Pymaceuticals</h1>
-File submitted for evaluation: pymaceuticals_final.ipynb
-I used the other files as my 'working' files and they contain extra comments and notes I made as I worked through each step.
+<p>File submitted for evaluation: pymaceuticals_final.ipynb</p>
+<p>I used the other files as my 'working' files and they contain extra comments and notes I made as I worked through each step.</p>
 
 <h2>Merging the data and identifying the problem mouse</h2>
 <p>Reading the csv's and merging into one df went well. To find the problem mouse I did a count by Mouse ID on Timepoint and returned a dataframe sorted in descending order. I saw that mouse g989 was the only mouse to have 13 timepoints, so I used .loc to create a dataframe that isolated only that mouse. There I confirmed that there were multiple tumor volumes for the same timepoint/drug regimen at several time points. I then used .loc again to create a dataframe with all mice except for g989, and I used that (clean_mousedata_df) to continue with the analysis.</p>
